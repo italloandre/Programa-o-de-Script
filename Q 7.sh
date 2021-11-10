@@ -1,7 +1,6 @@
 #!/bin/bash
 
-read -p  "digite um numero inteiro" y
+read -p "Digite um valor para Y: " y
+y="$(( ${y} + 42 ))"
 
-resultado=$((${a} + 42))
-
-echo -e ${resultado}
+echo "Y + 42 = ${y}"
